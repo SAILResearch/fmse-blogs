@@ -1,0 +1,74 @@
+{
+    "Apple": [
+        "https://security.apple.com/blog/",
+        "https://machinelearning.apple.com/"
+    ],
+    "Microsoft": [
+        "https://devblogs.microsoft.com/",
+        "https://blogs.microsoft.com/",
+        "https://www.microsoft.com/en-us/research/blog/",
+        "https://techcommunity.microsoft.com/t5/"
+    ],
+    "Nvidia": [
+        "https://developer.nvidia.com/blog/",
+        "https://blogs.nvidia.com/"
+    ],
+    "Google": [
+        "https://developers.googleblog.com/en/",
+        "https://blog.google/",
+        "https://cloud.google.com/blog/",
+        "https://research.google/blog/",
+        "https://deepmind.google/discover/blog/"
+    ],
+    "Amazon": [
+        "https://aws.amazon.com/blogs/",
+        "https://www.amazon.science/blog"
+    ],
+    "Meta": [
+        "https://engineering.fb.com/",
+        "https://research.facebook.com/blog/",
+        "https://tech.facebook.com/engineering/"
+    ],
+    "Oracle": [
+        "https://blogs.oracle.com/"
+    ],
+    "Salesforce": [
+        "https://engineering.salesforce.com/blog/",
+        "https://www.salesforce.com/blog/",
+        "https://blog.salesforceairesearch.com/"
+    ],
+    "SAP": [
+        "https://community.sap.com/t5/technology-blogs-by-sap"
+    ],
+    "Adobe": [
+        "https://blog.adobe.com/",
+        "https://blog.developer.adobe.com/"
+    ],
+    "AMD": [
+        "https://community.amd.com/t5/ai/"
+    ],
+    "Qualcom": [
+        "https://www.qualcomm.com/developer/blog"
+    ],
+    "IBM": [
+        "https://www.ibm.com/blog/",
+        "https://developer.ibm.com/blogs/",
+        "https://research.ibm.com/blog"
+    ],
+    "Accenture": [
+        "https://www.accenture.com/us-en/insights/"
+    ],
+    "CISCO": [
+        "https://blog.talosintelligence.com/",
+        "https://blogs.cisco.com/"
+    ],
+    "Uber": [
+        "https://www.uber.com/blog/"
+    ],
+    "Tencent": [
+        "https://www.tencentcloud.com/dynamic/blogs/"
+    ],
+    "Alibaba": [
+        "https://www.alibabacloud.com/blog/"
+    ]
+}

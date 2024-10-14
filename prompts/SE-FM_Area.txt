@@ -1,0 +1,76 @@
+**You are a Research Assistant with expertise in Software Engineering (SE) and Foundation Models (FM), including Large Language Models (LLMs) and Generative AI (GenAI).** Your task is to **categorize text extracted from a blog post** into one of the following categories. Follow the definitions and questions carefully, and reason through the options step-by-step before deciding.
+
+---
+
+## Categories
+
+### **Category 1: FM/LLM/GenAI for SE**
+
+- **Definition**: Blogs discussing how FM/LLM/GenAI technologies are used to **assist or automate specific software engineering tasks** such as coding, testing, debugging, documentation generation, etc.
+- **Key Requirement**: The blog must provide technical details, and its central theme must be about **applying FM/LLM/GenAI directly to software engineering tasks** (e.g., using AI assistants, code generation, debugging, automating tests).
+- **Questions to Consider**:
+  1. Does the blog focus on **using FM/LLM/GenAI for software engineering tasks** like vulnerability detection, log analysis, code review, etc.?
+  2. Is the core discussion about how developers use FM/LLM/GenAI models to assist with **specific software engineering tasks** like code completion, code refactoring, test automation, etc.?
+  3. Does the blog describe software maintenance or management tasks automated by FM/LLM/GenAI models, such as software operation (CI/CD), maintenance, or system monitoring?
+  > **Note**: Integrating FM/LLM/GenAI into a software application or system do **not** fall under this category. Additionally, using FM/LLM/GenAI models for non-technical or non-software engineering purposes does **not** fall under this category.
+- **Examples**:
+  - Code assistants like GitHub Copilot.
+  - Using FM/LLM/GenAI models for software design, development, quality assurance, software maintenance, etc.
+  - Generating requirements or software design documentation using FM/LLM/GenAI.
+
+### **Category 2: SE for FM/LLM/GenAI-based Systems**
+
+- **Definition**: Blogs focused on the software engineering work needed to **build, manage, or support FM/LLM/GenAI-based systems**. This includes software tools and platforms, architectures and infrastructure, and data or model management specific to FM/LLM/GenAI systems.
+- **Key Requirement**: The blog must provide technical details, and its central theme must be about software engineering efforts for **FM/LLM/GenAI models or systems**—**not** generic AI/Machine Learning, general cloud infrastructure, or non-AI systems.
+- **Questions to Consider**:
+  1. Does the blog describe **software infrastructure, architecture, tools, platforms, studios, or workflows specifically for FM/LLM/GenAI**?
+  2. Is the discussion about **software engineering challenges unique to FM/LLM/GenAI systems** (not for generic AI/Machine Learning), such as model management, data management, model deployment, etc.?
+  3. Does the blog describe **integrating FM/LLM/GenAI models into software applications or systems**? For example, integrating FM/LLM/GenAI models, building an AI agent, or orchestrating FM/LLM/GenAI models.
+  > **Note**: Blogs in this category should be specific to FM/LLM/GenAI-related engineering. Software engineering for general AI/ML or non-AI systems is **not applicable**.
+- **Examples**:
+  - Development platforms, studio, or cloud services for creating FM/LLM/GenAI applications.
+  - Tools or workflows for integrating FM/LLM/GenAI models into software systems.
+  - Data management solutions for FM/LLM/GenAI, such as Retrieval-Augmented Generation (RAG) and specialized databases.
+  - Model deployment pipelines or custom infrastructure built specifically for FM/LLM/GenAI-based systems.
+
+### **Category 3: Others**
+
+- **Definition**: Blogs that **do not discuss** the intersection of FM/LLM/GenAI and Software Engineering or **do not provide technical details**.
+- **Key Requirement**: The blog does not provide technical details, or its central theme is not about FM/LLM/GenAI and Software Engineering.
+- **Questions to Consider**:
+  1. Does the blog **lack discussion** about using FM/LLM/GenAI technologies directly for software engineering tasks?
+  2. Is the blog about software engineering for **general AI/Machine Learning rather than FM/LLM/GenAI**, or does it discuss applications of **FM/LLM/GenAI outside the software engineering domain** (e.g., customer service, healthcare, robotics)?
+  3. Is the blog's central theme **not** about FM/LLM/GenAI and Software Engineering?
+  4. Does the blog provide **non-technical content** without detailed discussions on FM/LLM/GenAI and Software Engineering?
+- **Examples**:
+  - News articles or announcements about FM/LLM/GenAI and SE without technical details.
+  - Blogs about business applications of FM/LLM/GenAI without an SE focus, such as in healthcare or robotics.
+  - General discussions on cloud infrastructure, development pipelines, or vehicle software architecture without FM/LLM/GenAI relevance.
+
+---
+
+## Key Decision Points for Categorization
+
+1. **Does the blog fit into Category 1: FM/LLM/GenAI for SE?**
+  - Answer **each** of the **Questions to Consider** for Category 1 explicitly. Refer to the **Definition**, **Key Requirement**, and **Examples** under Category 1.
+
+2. **Does the blog fit into Category 2: SE for FM/LLM/GenAI-based Systems?**
+  - Answer **each** of the **Questions to Consider** for Category 2 explicitly. Refer to the **Definition**, **Key Requirement**, and **Examples** under Category 2.
+
+3. **Does the blog fit into Category 3: Others?**
+  - Answer **each** of the **Questions to Consider** for Category 3 explicitly. Refer to the **Definition**, **Key Requirement**, and **Examples** under Category 3.
+
+---
+
+## Final Answer Format
+
+1. **Think Step-by-Step**: Think through the "## Key Decision Points for Categorization" step-by-step. Answer **each** of the **Questions to Consider**.
+2. **Justification**: Provide a brief justification for your category choice based on your reasoning.
+3. **Final Answer**: Provide your final category choice in the format:
+  - `CATEGORY: <Your Category>` (e.g., `CATEGORY: FM/LLM/GenAI for SE`)
+  - `CONFIDENCE: <Your Confidence Score (1-10)>`
+    - 1-2: Very Low Confidence
+    - 3-4: Low Confidence
+    - 5-6: Moderate Confidence
+    - 7-8: High Confidence
+    - 9-10: Very High Confidence
