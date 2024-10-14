@@ -2,36 +2,42 @@
 
 This repository provides all the data and code required to reproduce our paper.
 
-## Index for blog posts
+## 1. **🌐 Blog Post Index**  
+Explore **categorized blog posts** that highlight the role of FMs and SE in real-world practices. 
 
-Check the [posts_index](posts_index) folder for the index of blog posts:
+Check the [`posts_index`](posts_index) folder for detailed indexes of relevant blog posts:
 
-- [FM4SE.md](posts_index%2FFM4SE.md)
-- [SE4FM.md](posts_index%2FSE4FM.md)
+- **[FM4SE.md](posts_index%2FFM4SE.md)**: Blogs on **Foundation Models *for* Software Engineering (FM4SE)**.  
+- **[SE4FM.md](posts_index%2FSE4FM.md)**: Blogs on **Software Engineering *for* Foundation Models (SE4FM)**.  
 
-## Prompts
+## 2. **💬 Prompts**  
+Prompts used for the FM/LLM jury:
 
-- [prompts](prompts): contains the prompts we used for FM/LLM Jury:
-    - [SE-FM_Area.txt](prompts%2FSE-FM_Area.txt): contains the SE-FM area classification prompt.
-    - [FM4SE.txt](prompts%2FFM4SE.txt): contains the FM4SE activity classification prompt.
-    - [SE4FM.txt](prompts%2FSE4FM.txt): contains the SE4FM activity classification prompt.
+- **[SE-FM_Area.txt](prompts%2FSE-FM_Area.txt)**: Classifies blog posts into **SE-FM areas**.  
+- **[FM4SE.txt](prompts%2FFM4SE.txt)**: Focuses on activities related to **FM4SE**.  
+- **[SE4FM.txt](prompts%2FSE4FM.txt)**: Focuses on activities related to **SE4FM**.  
 
-## Data
+## 3. **📊 Data**  
 
-[./data](data) contains the data we used in our study:
-- [company_blogs.json](data%2Fcompany_blogs.json): contains the list of company blogs we used in our study.
-- [collected_blog_posts.csv](data%2Fcollected_blog_posts.csv): contains the metadata of 4,463 blog posts:
-    - `id`: unique identifier of the blog post.
-    - `title`: the title of the blog post.
-    - `link`: the URL of the blog post.
-    - `company`: the company that published the blog post.
-    - `snippet`: the snippet of the blog post.
-    - `area`: the SE-FM area of the blog post, i.e., FM4SE, SE4FM, and others.
-- [fm4se_activities.csv](data%2Ffm4se_activities.csv): contains 155 FM4SE blog posts.
-    - `activity`: the FM4SE activity.
-    - `tasks`: the tasks related to the FM4SE activity.
-    - other columns are the same as `collected_blog_posts.csv`.
-- [se4fm_activities.csv](data%2Fse4fm_activities.csv): contains 997 SE4FM blog posts.
-    - `activity`: the SE4FM activity.
-    - `tasks`: the tasks related to the SE4FM activity.
-    - other columns are the same as `collected_blog_posts.csv`.
+The [data](data) folder contains all the datasets used in our study, including:
+
+- **[collected_blog_posts.csv](data%2Fcollected_blog_posts.csv)**:  
+  A CSV containing **4,463 blog posts** with key metadata:
+  - `id`: Unique identifier of the blog post  
+  - `title`: Title of the blog post  
+  - `link`: URL of the blog post  
+  - `company`: The company that published the blog post.
+  - `snippet`: the snippet of the blog post (provided by Google Search)
+  - `area`: Classification area (`FM4SE`, `SE4FM`, or others)
+
+- **[FM4SE_activities.csv](data%2FFM4SE_activities.csv)**:  
+  Contains **155 FM4SE blog posts**, with details about:
+  - `activity`: FM4SE activity  
+  - `tasks`: Tasks related to the FM4SE activity  
+  - *Other columns*: Same as in `collected_blog_posts.csv`
+
+- **[SE4FM_activities.csv](data%2FSE4FM_activities.csv)**:  
+  Contains **997 SE4FM blog posts**, with details about:
+  - `activity`: SE4FM activity  
+  - `tasks`: Tasks associated with the SE4FM activity  
+  - *Other columns*: Same as in `collected_blog_posts.csv`
