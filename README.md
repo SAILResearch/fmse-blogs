@@ -13,13 +13,16 @@ Check the [`posts_index`](posts_index) folder for detailed indexes of relevant b
 ## 2. **💬 Prompts**  
 Prompts used for the FM/LLM jury:
 
-- **[SE-FM_Area.txt](prompts%2FSE-FM_Area.txt)**: Classifies blog posts into **SE-FM areas**.  
+- **[SEFM_Area.txt](prompts%2FSEFM_Area.txt)**: Classifies blog posts into **SE-FM areas**.  
 - **[FM4SE.txt](prompts%2FFM4SE.txt)**: Focuses on activities related to **FM4SE**.  
 - **[SE4FM.txt](prompts%2FSE4FM.txt)**: Focuses on activities related to **SE4FM**.  
 
 ## 3. **📊 Data**  
 
 The [data](data) folder contains all the datasets used in our study, including:
+
+- **[company_blogs.json](data%2Fcompany_blogs.json)**:
+  A JSON file containing blog sites from various companies.
 
 - **[collected_blog_posts.csv](data%2Fcollected_blog_posts.csv)**:  
   A CSV containing **4,463 blog posts** with key metadata:
@@ -41,3 +44,12 @@ The [data](data) folder contains all the datasets used in our study, including:
   - `activity`: SE4FM activity  
   - `tasks`: Tasks associated with the SE4FM activity  
   - *Other columns*: Same as in `collected_blog_posts.csv`
+
+
+## 4. **🔍 Analysis**
+
+The [scripts](scripts) folder contains the code used to analyze the blog posts:
+
+- **[run_jury.py](scripts%2Frun_jury.py)**
+    - Runs the FM/LLM jury on the collected blog posts.
+    - Outputs the results in a CSV file.
