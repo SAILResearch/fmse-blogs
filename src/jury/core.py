@@ -26,7 +26,7 @@ def standardize_confidence_scores(confidences):
     # Compute mean and standard deviation for each LLM
     means = np.mean(confidences)
     std_devs = np.std(confidences)
-    print(means, std_devs)
+    # print(means, std_devs)
 
     # Standardize using Z-score: (x - mean) / std
     standardized_scores = (confidences - means) / std_devs

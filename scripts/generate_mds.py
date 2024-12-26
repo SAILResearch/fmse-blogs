@@ -1,6 +1,14 @@
+import sys
 import ast
-
+from pathlib import Path
 import pandas as pd
+
+CUR_DIR = Path(__file__).parent.resolve()
+added_path = CUR_DIR.parent.resolve()
+print(added_path)
+sys.path.insert(0, str(added_path))
+
+from src import common_path
 
 
 TASKS_SHOW_MAP = {
@@ -53,7 +61,7 @@ def generate_toc(activities):
 def convert_to_markdown(area):
     assert area in ["FM4SE", "SE4FM"], "Invalid area"
     # Load the data
-    df = pd.read_csv(f"../data/{area}_activities.csv")
+    df = pd.read_csv(common_path.DATA_PATH / f"{area}_activities.csv")
 
     # Select only the required columns
     df = df[['id', 'activity', 'tasks', 'title', 'link']]

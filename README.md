@@ -1,6 +1,13 @@
 # Replication package for "Software Engineering and Foundation Models: Insights from Industry Blogs Using a Jury of Foundation Models"
 
-This repository provides all the data and code required to reproduce our paper.
+This repository provides all the data and code related to our paper.
+Jump to [4. 🔄 Reproduce](#4--reproduce) if you want to reproduce the results. 
+
+## Table of Contents
+1. [🌐 Blog Post Index](#1--blog-post-index-)
+2. [💬 Prompts](#2--prompts-)
+3. [📊 Data](#3--data-)
+4. [🔄 Reproduce](#4--reproduce)
 
 ## 1. **🌐 Blog Post Index**  
 Explore **categorized blog posts** that highlight the role of FMs and SE in real-world practices. 
@@ -45,11 +52,21 @@ The [data](data) folder contains all the datasets used in our study, including:
   - `tasks`: Tasks associated with the SE4FM activity  
   - *Other columns*: Same as in `collected_blog_posts.csv`
 
+## 4. **🔄 Reproduce**
 
-## 4. **🔍 Analysis**
+The `Dockerfile` in this directory has been used to create the docker image `fmse_blogs_image.tgz` using this command:
 
-The [scripts](scripts) folder contains the code used to analyze the blog posts:
+```bash
+docker build -t fmse_blogs .
+```
 
-- **[run_jury.py](scripts%2Frun_jury.py)**
-    - Runs the FM/LLM jury on the collected blog posts.
-    - Outputs the results in a CSV file.
+If you have downloaded the `fmse_blogs_image.tgz` file, you can load it into your Docker environment using the following command in your terminal, from the directory containing the `.tgz` file:
+
+```bash
+docker load -i fmse_blogs_image.tgz 
+```
+
+and run via 
+```
+docker run -it -v"${PWD}/output":"/app/output" fmse_blogs
+```
