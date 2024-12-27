@@ -199,8 +199,10 @@ def reproduce_table(csv_file):
     final_df = merged_df[
         ['activity', 'activity_occurrences', 'activity_unique_companies', 'task', 'task_occurrences',
          'task_unique_companies']]
-    final_df = final_df.sort_values(by=['activity_unique_companies', 'activity', 'task_unique_companies'],
-                                    ascending=False)
+    final_df = final_df.sort_values(
+        by=['activity_unique_companies', 'activity_occurrences', 'task_unique_companies', 'task_occurrences'],
+        ascending=False
+    )
 
     # Step 8: Convert DataFrame to LaTeX table
     latex_table = final_df.to_latex(index=False)
